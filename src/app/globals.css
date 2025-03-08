@@ -2,20 +2,181 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+h1, h2, h3 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+/* .font-dancing {
+  font-family: var(--font-dancing-script), cursive;
+} */
+
+p, span, ul {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+.typewritter {
+  border-right: 4px orange solid;
+  padding-right: 8px;
+  white-space: nowrap; 
+  overflow: hidden;
+  animation: blink 0.7s infinite,
+  typing 8s steps(36, end) infinite;
+}
+
+.fadeup {
+  animation: fade-up 2s;
+}
+
+@keyframes fade-up {
+  from{ 
+    opacity: 0;
+    transform: translateY(100)
+   }  
+  to {
+     opacity: 100;
+     transform: translateY(0)
+     }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { @apply border-secondary }
+}
+
+@keyframes typing {
+  from {width: 1ch}
+  50% {width: 100%}
+  /* from {width: 0%}
+  50% {width:100%} */
+}
+
+.marquee{
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% {transform: translateX(-100%);}
+   }
+
+.stop:hover{
+  animation-play-state: paused;
+}
+
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 228 48% 10%;
+    --background-100:228, 48%, 95%;
+    --background-200:228, 48%, 90%;
+    --background-300:228, 48%, 80%;
+    --background-400:228, 48%, 70%;
+    --background-500:228, 48%, 60%;
+    --background-600:228, 48%, 50%;
+    --background-700:228, 48%, 40%;
+    --background-800:228, 48%, 30%;
+    --background-900:228, 48%, 20%;
+
+    --foreground: 222.2 84% 4.9%;
+    --card: 228, 48%, 90%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+  
+  --primary-50: 163, 94%, 95%;
+  --primary-100:163, 94%, 90%;
+  --primary-200: 163, 94%, 80%;
+  --primary-300: 163, 94%, 70%;
+  --primary-400: 163, 94%, 60%;
+  --primary-500: 163, 94%, 51%; /* Base color */
+  --primary-600: 163, 94%, 40%;
+  --primary-700: 163, 94%, 30%;
+  --primary-800: 163, 94%, 20%;
+  --primary-900: 163, 94%, 10%;
+  --primary-foreground: 210 40% 98%;
+    
+  --secondary-50: 330, 75%, 95%;
+  --secondary-100: 330, 75%, 90%;
+  --secondary-200: 330, 75%, 80%;
+  --secondary-300: 330, 75%, 70%;
+  --secondary-400: 330, 75%, 60%;
+  --secondary-500: 330, 75%, 50%; /* Base color */
+  --secondary-600: 330, 75%, 40%;
+  --secondary-700: 330, 75%, 30%;
+  --secondary-800: 330, 75%, 20%;
+  --secondary-900: 330, 75%, 10%;
+
+  --blue-50:256, 91%, 95%;
+  --blue-100: 256, 91%, 85%;
+  --blue-200: 256, 91%, 75%;
+  --blue-300: 256, 91%, 65%;
+  --blue-400: 256, 91%, 55%;
+  --blue-500: 256, 91%, 45%; /* Base Color */
+  --blue-600: 256, 91%, 35%;
+  --blue-700: 256, 91%, 26%; /* Your original color */
+  --blue-800: 256, 91%, 20%;
+  --blue-900: 256, 91%, 15%;
+
+
+  
+
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 6% 90%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.2rem;
+    --success: 196 52% 74%;
+    --warning: 34 89% 85%;
+    --error: 10 100% 86%;
+  }
+  
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+   
+  }
 }
