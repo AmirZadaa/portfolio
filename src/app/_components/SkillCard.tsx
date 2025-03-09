@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { skills } from "../_assets/data";
+import { skills } from "../_assets";
 export default function SkillCard() {
   return (
 <div className="overflow-hidden mx-auto  text-card py-4 w-[95%] ">

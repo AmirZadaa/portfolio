@@ -2,7 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import ProjectImages from "./ProjectImages";
-import { projectsData } from "@/app/_assets/data";
+import { projectsData } from "@/app/_assets";
 
 export default function Projects() {
   return (
@@ -19,8 +19,8 @@ export default function Projects() {
           className="flex max-lg:flex-col-reverse bg-background w-[55rem]  max-lg:w-[40rem] max-md:w-fit ring-1 rounded-2xl ring-background-500  mx-auto"
         >
           <div className="grow text-background-300  space-y-6 p-8 max-sm:p-4 flex flex-col justify-center ">
-            <h2 className="text-4xl font-bold">{project.title}</h2>
-            <p className="text-lg ">{project.description}</p>
+            <h2 className="text-2xl font-bold">{project.title}</h2>
+            <p className="text-sm text-justify">{project.description}</p>
              <div className="space-y-2">
                <h3 className="text-lg font-bold ">Stack</h3>
                <div className="flex gap-2 flex-wrap">
@@ -32,7 +32,7 @@ export default function Projects() {
             <div className="flex gap-4">
               <div className="relative flex  w-44 max-sm:w-full h-10 bg-gradient-to-r  rounded-full from-blue-400 to-secondary-400">
                 <Link
-                  href="https://simple-calculator-reactjs.vercel.app/"
+                  href={project.liveLink}
                   target="_blank"
                   className="bg-background hover:bg-transparent  font-bold rounded-full absolute flex justify-center items-center inset-[2px] "
                 >
@@ -41,7 +41,7 @@ export default function Projects() {
               </div>
               <div className="relative flex  w-44 h-10 max-sm:w-full bg-gradient-to-r  rounded-full from-blue-400 to-secondary-400">
                 <Link
-                  href="https://simple-calculator-reactjs.vercel.app/"
+                  href={project.gitHub_repo}
                   target="_blank"
                   className="bg-background hover:bg-transparent font-bold rounded-full absolute flex justify-center items-center inset-[2px] "
                 >

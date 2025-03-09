@@ -25,7 +25,7 @@ export default function WorkExperience() {
           </div>
           <div className="flex gap-2">
             <Calendar size={18} />
-            <span className="text-sm">November 2024-Present</span>
+            <span className="text-sm">March 2024-Present</span>
           </div>
         </div>
       </div>

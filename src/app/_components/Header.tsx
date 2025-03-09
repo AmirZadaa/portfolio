@@ -32,7 +32,7 @@
 // }
 
 
-import { headerLinks } from '../_assets/data';
+import { headerLinks } from '../_assets';
 import Link from 'next/link';
 import SideBar from './SideBar';
 

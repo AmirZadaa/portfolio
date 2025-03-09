@@ -20,27 +20,26 @@ import mongodb from './mongoDB.svg'
 import tailwindcss from './tailwind.svg'
 import bootstrap from './bootstrap.svg'
 import shadcn from './shadcn.png'
-export {
-    amir1,
-    amir2,
-    dots,
-    place,
-    NexusFaviIcon,
-    swtLogo,
-    amir3,
-    calc,
-    calc2,
-    css,
-    html,
-    bootstrap,
-    nextjs,
-    react,
-    nodjs,
-    git,
-    tailwindcss,
-    js,
-    TypeScript,
-    mongodb,
-    shadcn,
+import care1 from './care1.jpg'
+import care2 from './care2.jpg'
+import care3 from './care3.jpg'
+import care4 from './care4.jpg'
+import zada from './zada.jpg'
+import store1 from './store1.jpg'
+import store2 from './store2.jpg'
+import store3 from './store3.jpg'
+import store4 from  './store4.jpg'
+import store5 from   './store4.jpg'
+import kfc1 from './kfc1.jpg'
+import kfc2 from './kfc2.jpg'
+import kfc3 from './kfc3.jpg'
+import q1 from './q1.jpg'
+import q2 from './q2.jpg'
+import q3 from './q3.jpg'
 
+
+export {
+    amir1, amir2, dots,place,NexusFaviIcon,swtLogo, amir3,calc, calc2, css,html,bootstrap, nextjs,
+    react, nodjs, git,tailwindcss, js, TypeScript, mongodb, shadcn, care1,care2,care3,care4,zada,
+    store1,store2,store3,store4,store5,kfc1,kfc2,kfc3,q1,q2,q3,
 }

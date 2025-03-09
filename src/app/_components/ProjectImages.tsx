@@ -40,7 +40,7 @@ export default function ProjectImages({images}: {images:StaticImageData[]}) {
         {images.map((image, index) => (
           <CarouselItem key={index} className='rounded-2xl'>
             <div className='w-full aspect-square relative '>
-              <Image src={image} fill alt='image' className='rounded-2xl object-cover' />
+              <Image src={image} fill alt='image' className='rounded-2xl object-contain' />
             </div>
           </CarouselItem>
         ))}

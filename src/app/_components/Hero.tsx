@@ -25,10 +25,14 @@ export default function Hero() {
         </div>
         <div className="flex gap-4  max-sm:justify-center">
           <span className="bg-secondary px-1 py-1 rounded-full hover:scale-125 duration-500">
+            <Link href={"https://github.com/AmirZadaa"} target="_blank"  aria-label="github">
             <Github className="fill-black stroke" />
+            </Link>
           </span>
           <span className="bg-secondary px-1 py-1 rounded-full hover:scale-125 duration-500">
+            <Link href={"https://www.linkedin.com/in/AmirZadaWeb/"} aria-label="linkedin">
             <Linkedin className="fill-black " />
+            </Link>
           </span>
         </div>
         <div className="flex gap-4 max-xs:gap-4 max-sm:mx-auto">
@@ -41,9 +45,12 @@ export default function Hero() {
           </div>
           <div className="relative   bg-gradient-to-r from-blue-600 to-secondary  rounded-full  p-[2px]">
             <Button className="rounded-full text-card absolut inset-0 bg-black px-10  font-bold">
-              <Link href={"#"} aria-label="go contact me">
+              <a  href="/Amir-web-dev.pdf" 
+                 aria-label="download resume" 
+                download
+                 >
                 GET RESUME
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

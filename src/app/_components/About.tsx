@@ -1,6 +1,6 @@
 "use client";
 
-import {  amir3 } from "@/app/_assets/images";
+import {  zada } from "../_assets/images";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -51,7 +51,7 @@ export default function About() {
         <div className="flex  justify-center items-center max-lg:order-1">
         <div className="w-44 aspect-[1/1] rounded-full relative">
           <Image
-            src={amir3}
+            src={zada}
             alt="amir1"
             fill
             className="object-cover border-[1px] hover:scale-110 rounded-full duration-700"
