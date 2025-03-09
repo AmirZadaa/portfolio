@@ -77,7 +77,7 @@ export const projectsData: projectsData = [
     title: "KFC UI clone",
      description: "A fast and responsive KFC UI clone with a sleek design, smooth navigation, and optimized performance. It replicates KFC’s storefront with menu items, store locations, and essential ordering features. ",
      gitHub_repo: "https://github.com/AmirZadaa/foodStore",
-     liveLink: "https://food-store-beta.vercel.app/store-locations",
+     liveLink: "https://food-store-beta.vercel.app/",
      images: [kfc1,kfc2,kfc3],
      stack: ["NextJs", "Tailwind", "Shadcn"]
    },
