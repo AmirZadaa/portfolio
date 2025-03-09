@@ -8,7 +8,7 @@ import Education from "./Education";
 export default function Resume() {
   return (
     <div id = "resume"  className="shadow-[0px_1px_0px_hsl(var(--background-800))] md:pb-10 pb-4">
-    <div className="space-y-10  text-card px-10 py-6 max-sm:px-4 mt-20 max-sm:mt-10  w-[90%]  mx-auto">
+    <div className="space-y-10  text-card px-10 py-6 max-sm:px-4 mt-20 max-sm:mt-10  w-[98%]  mx-auto">
        <div className="relative flex justify-center">
         <h1 className="bg-gradient-to-bl from-blue-600 to-secondary-700  w-fit mx-auto px-4 z-10 py-2 rounded-lg text-card text-2xl">
            Resume

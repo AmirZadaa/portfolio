@@ -144,7 +144,7 @@ export default function ContactForm() {
               <Button
                 type="submit"
                 disabled={isloading}
-                className="rounded-full text-card w-full text-lg bg-background hover:bg-transparent font-bold"
+                className="rounded-full text-card w-full text-lg hover:bg-background bg-transparent font-bold"
               >
                 {!isloading ? "Submit":
                   <svg

@@ -16,7 +16,7 @@ export default function Eduction() {
           <div className='rounded-full w-8 aspect-square  relative'>
            <Image src={swtLogo} fill alt="logo" className='object-cover rounded-full' sizes="32px" />
             </div>
-            <span className="text-sm ">University of swat.</span>
+            <span className="text-sm ">University of swat</span>
             <MapPin size={18} className='fill-secondary-300'/>
             <span className="text-sm ">Swat</span>
           </div>

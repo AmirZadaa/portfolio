@@ -10,11 +10,11 @@ export default function WorkExperience() {
       <div className="flex justify-between border-b-[1px] border-background-300 pb-4  max-sm:flex-col max-lg:gap-8">
         <div className="space-y-2">
         <h3 className="text-xl font-bold  text-primary-600">Fronted Developer</h3> 
-          <div className="flex items-center  gap-4">
+          <div className="flex items-center  gap-4 max-sm:gap-2">
             <div className='rounded-full w-8 aspect-square  relative'>
             <Image src={NexusFaviIcon} fill alt="place" className='object-cover rounded-full' sizes='32px' />
             </div>
-            <span className="text-sm ">NexusBerry Training and solutions.</span>
+            <span className="text-sm ">NexusBerry Training and solutions</span>
             <MapPin size={18} className='fill-secondary-300'/>
             <span className="text-sm ">Lahore</span>
           </div>
