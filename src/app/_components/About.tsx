@@ -32,9 +32,9 @@ export default function About() {
     <div
       id = "about"
       ref={elementRef}
-      className={`mt-10  ${
+      className={`mt-10 container mx-auto  ${
         isVisible ? "fadeup" : "opacity-0"
-      } py-10 shadow-[0px_1px_0px_hsl(var(--background-800))]`}
+      } py-10 border-b-[2px] border-background-800`}
       >
       <div className="grid grid-cols-2 max-lg:gap-4 px-10 max-sm:px-0 max-lg:grid-cols-1 ">
         <div className="space-y-6 pt-10 max-lg:order-2">
