@@ -16,7 +16,7 @@ export default function Projects() {
       {projectsData.map((project, index) => (
         <div
           key={index}
-          className="flex max-lg:flex-col-reverse bg-background w-[55rem]  max-lg:w-[40rem] max-md:w-fit ring-1 rounded-2xl ring-background-500  mx-auto"
+          className="flex  max-lg:flex-col-reverse bg-background w-[55rem]  max-lg:w-[40rem] max-md:w-fit ring-1 rounded-2xl ring-background-500  mx-auto"
         >
           <div className="grow text-background-300  space-y-6 p-8 max-sm:p-4 flex flex-col justify-center ">
             <h2 className="text-2xl font-bold text-blue-50">{project.title}</h2>
@@ -50,10 +50,10 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          <div className="grow w-full  p-4">
+          <div className="grow flex lg:justify-end  w-full  p-4">
             <ProjectImages images={project.images} />
           </div>
-        </div>
+        </div> 
       ))}
     </div>
   );
