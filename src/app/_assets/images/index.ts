@@ -36,10 +36,13 @@ import kfc3 from './kfc3.jpg'
 import q1 from './q1.jpg'
 import q2 from './q2.jpg'
 import q3 from './q3.jpg'
+import l1 from './law1.jpg'
+import l2 from './law2.jpg'
+import l3 from './law3.jpg'
 
 
 export {
     amir1, amir2, dots,place,NexusFaviIcon,swtLogo, amir3,calc, calc2, css,html,bootstrap, nextjs,
     react, nodjs, git,tailwindcss, js, TypeScript, mongodb, shadcn, care1,care2,care3,care4,zada,
-    store1,store2,store3,store4,store5,kfc1,kfc2,kfc3,q1,q2,q3,
+    store1,store2,store3,store4,store5,kfc1,kfc2,kfc3,q1,q2,q3,l1,l2,l3
 }
