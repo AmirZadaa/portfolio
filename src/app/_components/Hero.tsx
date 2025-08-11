@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
           <div className="relative   bg-gradient-to-r from-blue-600 to-secondary  rounded-full  p-[2px]">
             <Button className="rounded-full text-card absolut inset-0 bg-black px-10  font-bold">
-              <a  href="/Amir-cv.pdf" 
+              <a  href="/amir-software-cv.pdf" 
                  aria-label="download resume" 
                 download
                  >
