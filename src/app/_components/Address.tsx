@@ -9,7 +9,7 @@ export default function Address() {
       </div>
       <div>
         <h1 className='font-semibold'>Phone </h1>
-        <p className='text-sm text-primary-600'>+92-3443318545</p>
+        <p className='text-sm text-primary-600'>+966-500357911</p>
       </div>
       <div>
         <h1 className="font-semibold">Email Address </h1>
